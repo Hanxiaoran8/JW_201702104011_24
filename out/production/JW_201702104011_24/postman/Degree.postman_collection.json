@@ -1,0 +1,176 @@
+{
+	"info": {
+		"_postman_id": "3e5ad81c-600f-4300-8192-ba94c7ef9701",
+		"name": "Degree",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "degreeGet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/degree.ctl?",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "degreeGet 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/degree.ctl?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "degreePost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"description\":\"asd\",\n\"id\":69,\n\"no\":\"36\",\n\"remarks\":\"\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/degree.ctl?",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "degreePut",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"description\":\"avav\",\n\"id\":69,\n\"no\":\"123\",\n\"remarks\":\"\"}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/degree.ctl?",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "degreeDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/degree.ctl?id=69",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"degree.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "69"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

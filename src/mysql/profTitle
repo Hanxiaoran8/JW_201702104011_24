@@ -1,0 +1,7 @@
+(
+    id          bigint auto_increment
+        primary key,
+    description varchar(255) null,
+    no          varchar(255) null,
+    remarks     varchar(255) null
+);

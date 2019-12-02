@@ -1,0 +1,179 @@
+{
+	"info": {
+		"_postman_id": "5947416a-d90a-4aa1-8ffd-f8e7e3b588d6",
+		"name": "Department",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "departmentGet",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/department.ctl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departmentGet 1",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/department.ctl?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departmentPost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"TM\",\r\n    \"id\": 2,\r\n    \"no\": \"08\",\r\n    \"remarks\": \"\",\r\n    \"school_id\": 1\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/department.ctl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departmentPut",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"GL\",\r\n    \"id\": 1,\r\n    \"no\": \"08\",\r\n    \"remarks\": \"\",\r\n    \"school\": {\r\n        \"description\": \"01\",\r\n        \"id\": 1,\r\n        \"no\": \"山建\",\r\n        \"remarks\": \"\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/department.ctl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "departmentDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/department.ctl?id=656",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"department.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "656"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

@@ -1,0 +1,183 @@
+{
+	"info": {
+		"_postman_id": "a831a1b7-6ce3-4ca4-8de4-16d8d4bd236d",
+		"name": "School",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "schoolGet",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n\t\"name\":\"aaa\",\n\t\"proTitleId\":1,\n\t\"degreeId\":1,\n\t\"departmentId\":1\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/school.ctl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"school.ctl"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schoolGet 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":2,\n\t\"name\":\"aaa\",\n\t\"proTitleId\":1,\n\t\"degreeId\":1,\n\t\"departmentId\":1\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/school.ctl?id=1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"school.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schoolPost",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":3,\n\t\"no\":\"14\",\n\t\"description\":\"sddx\",\n\t\"remarks\":\"bb\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/school.ctl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"school.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schoolDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/school.ctl?id=361",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"school.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "361"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "schoolPut",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"description\": \"sdjg\",\r\n    \"id\": 662,\r\n    \"no\": \"13\",\r\n    \"remarks\": \"aa\"\r\n\t\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/JW_201802104056_war_exploded/school.ctl",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"JW_201802104056_war_exploded",
+						"school.ctl"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "361",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

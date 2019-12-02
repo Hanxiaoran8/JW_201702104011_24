@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/serializeObject.js"></script>
+    <script type="application/javascript">
+        function submit_onClick() {
+            var formData = $('#degreeFrom').serializeObject();
+            var degree_json = JSON.stringify(formData);
+            $.ajax({
+                url:"/degree/add.ctl",
+                type:"post",
+                data:degree_json,
+                contentType:"application/json;charset=utf-8",
+                dataType:"json",
+                success:function (msg) {
+                    alert("状态: " + msg.MSG);
+                    window.location.replace("/html/basic/degree.html");
+                },
+                error:function (msg) {
+                    alert("添加失败");
+
+                }
+            });
+        }
+    </script>
+</head>
+<body>
+<form id="degreeFrom">
+    <label for="no">NO</label>
+    <input name="no" id="no" value="05"/>
+
+    <label for="description" >DESCRIPTION</label>
+    <input name="description" id="description" value="管理">
+
+    <input type="button" name="submit" value="提交" onclick="submit_onClick()">
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src="../../js/angular.js"></script>
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="customersCtrl">
+
+    <table>
+        <tr ng-repeat="x in degrees"><td>{{x.no}}</td><td>{{x.id}}</td><td>{{x.description}}</td></tr>
+    </table>
+
+
+
+</div>
+
+<script>
+    var app = angular.module('myApp', []);
+    app.controller('customersCtrl', function($scope, $http) {
+        $http.get("/degree/list.ctl")
+            .success(
+                function (response)
+                {
+                    console.log(response);
+                    alert(response);
+                    $scope.degrees = response;
+                }
+            );
+    });
+</script>
+
+</body>
