@@ -33,6 +33,7 @@ public class DepartmentController extends HttpServlet {
         int schoolId = Integer.parseInt(jsonObject.getString("school_id"));
         System.out.println(schoolId);
         School school = null;
+        System.out.println("1111");
         try {
             school = SchoolService.getInstance().find(schoolId);
         } catch (SQLException e) {
